@@ -23,6 +23,9 @@ public class Calculator {
         
         System.out.println("Multiplication: " + calculator.multiplication(num1, num2));
         
+        System.out.println("Square of " + num1 + ": " + calculator.square(num1));
+        System.out.println("Cube of " + num1 + ": " + calculator.cube(num1));
+        
         scanner.close();
     }
     
@@ -40,5 +43,13 @@ public class Calculator {
     
     public float multiplication(float num1, float num2) {
         return num1 * num2;
+    }
+    
+    public float square(float num) {
+        return num * num;
+    }
+    
+    public float cube(float num) {
+        return num * num * num;
     }
 }
